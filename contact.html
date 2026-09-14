@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North Star Bakery - Contact & Pre-Orders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <img
+          src="bakery-logo_c.png"
+          alt="North Star Bakery Logo"
+          class="logo"
+        />
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Inquiries & Pre-Orders</h1>
+      <p>
+        Submit a request below to reserve your favorite goods or ask about
+        custom orders.
+      </p>
+
+      <form class="contact-form" action="#" method="post">
+        <fieldset>
+          <legend>Customer Information</legend>
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order & Request Details</legend>
+          <div class="form-group">
+            <label for="pickup-date">Requested Pickup Date</label>
+            <input type="date" id="pickup-date" name="pickup_date" />
+          </div>
+
+          <div class="form-group">
+            <label for="request-type">Request Type *</label>
+            <select id="request-type" name="request_type" required>
+              <option value="">Select an option...</option>
+              <option value="preorder">Pre-Order</option>
+              <option value="custom">Custom Cake Request</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="details">Item Details & Quantities</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="allergies">Allergy Notes (if applicable)</label>
+            <input
+              type="text"
+              id="allergies"
+              name="allergies"
+              placeholder="e.g., Nut allergy, dairy-free requirements"
+            />
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Submit Request</button>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 North Star Bakery. Handcrafted with care.</p>
+    </footer>
+  </body>
+</html>

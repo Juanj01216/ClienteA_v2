@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North Star Bakery - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <img
+          src="bakery-logo_c.png"
+          alt="North Star Bakery Logo"
+          class="logo"
+        />
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Welcome to North Star Bakery</h1>
+        <p class="tagline">
+          Warm, handmade baked goods crafted fresh daily for our neighborhood
+          community.
+        </p>
+
+        <picture class="responsive-banner">
+          <source
+            media="(min-width: 48em)"
+            srcset="bakery-feature-large_c.png"
+          />
+          <img
+            src="bakery-feature-small_c.png"
+            alt="Freshly baked artisan breads on display in the storefront window"
+          />
+        </picture>
+      </section>
+
+      <section class="welcome-audio">
+        <h2>Listen to Our Welcome Message</h2>
+        <audio controls>
+          <source src="bakery-welcome_c.mp3" type="audio/mpeg" />
+          <p>
+            Your browser does not support the audio element.
+            <a href="bakery-welcome_c.mp3"
+              >Download the welcome message audio file directly.</a
+            >
+          </p>
+        </audio>
+      </section>
+
+      <section class="featured-weekly">
+        <h2>Featured Item of the Week</h2>
+        <figure class="featured-figure">
+          <img
+            src="bakery-signature-loaf_c.png"
+            alt="A freshly baked golden-brown sourdough loaf resting on a wooden board"
+          />
+          <figcaption>
+            Our Signature Sourdough Loaf — Baked with a 10-year-old starter and
+            local organic flour.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="info-grid">
+        <article class="info-card">
+          <h3>What We're Known For</h3>
+          <p>
+            We specialize in long-fermentation sourdoughs, delicate french
+            pastries, and custom occasion cakes crafted with locally sourced
+            ingredients.
+          </p>
+        </article>
+        <article class="info-card">
+          <h3>Hours & Location</h3>
+          <p><strong>Address:</strong> 123 Main Street, Community Square</p>
+          <p>
+            <strong>Hours:</strong> Tue - Sun: 7:00 AM - 5:00 PM (Closed
+            Mondays)
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 North Star Bakery. Handcrafted with care.</p>
+    </footer>
+  </body>
+</html>

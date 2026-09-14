@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North Star Bakery - Products</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <img
+          src="bakery-logo_c.png"
+          alt="North Star Bakery Logo"
+          class="logo"
+        />
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Our Product Selection</h1>
+      <p>
+        Explore our daily handmade offerings. Pre-orders can be requested via
+        our contact page.
+      </p>
+
+      <div class="product-gallery">
+        <img
+          src="bakery-bread_c.png"
+          alt="An assortment of artisan breads including baguettes and rye"
+          class="gallery-image"
+        />
+      </div>
+      <section class="favorites-widget">
+        <h2>Tus Productos Favoritos Guardados</h2>
+        <ul id="favorites-list">
+          <li>No has guardado productos favoritos aún.</li>
+        </ul>
+      </section>
+
+      <section class="product-categories">
+        <article class="category-card">
+          <div>
+            <h2>Artisan Breads</h2>
+            <p>
+              Hand-shaped sourdoughs, crusty baguettes, and rich brioche loaves
+              made with organic grains.
+            </p>
+          </div>
+          <span class="price-range">Price Range: $4.50 – $9.00</span>
+          <button class="btn-favorite" data-id="1" data-name="Artisan Breads">
+            ♡ Agregar a Favoritos
+          </button>
+        </article>
+
+        <article class="category-card">
+          <div>
+            <h2>Handmade Pastries</h2>
+            <p>
+              Flaky butter croissants, fruit-filled pastries, cinnamon rolls,
+              and seasonal tarts.
+            </p>
+          </div>
+          <span class="price-range">Price Range: $3.00 – $6.50</span>
+          <button
+            class="btn-favorite"
+            data-id="2"
+            data-name="Handmade Pastries"
+          >
+            ♡ Agregar a Favoritos
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 North Star Bakery. Handcrafted with care.</p>
+    </footer>
+  </body>
+</html>

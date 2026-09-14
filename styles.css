@@ -1,0 +1,318 @@
+:root {
+  --primary-color: #5c3a21; /* Café oscuro artesanal */
+  --secondary-color: #d97736; /* Terracota para interacción */
+  --background-color: #faf6f0; /* Crema suave para fondo */
+  --card-background: #ffffff; /* Blanco para tarjetas */
+  --text-color: #2b2521; /* Oscuro de alto contraste */
+  --border-color: #e0d6cb; /* Bordes sutiles */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+/* Header y Navegación */
+.site-header {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  max-height: 60px;
+  width: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus,
+.main-nav a.active {
+  background-color: var(--secondary-color);
+  outline: none;
+}
+
+/* Tipografía y Secciones */
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.responsive-banner img,
+.gallery-image,
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.featured-figure {
+  margin: 2rem 0;
+  background-color: var(--card-background);
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.featured-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.featured-figure figcaption {
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Layout Flexbox (Diseño Base Móvil) */
+.info-grid,
+.product-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.info-card,
+.category-card {
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price-range {
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-top: 1rem;
+  display: block;
+}
+
+/* Formularios */
+.contact-form {
+  background-color: var(--card-background);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+fieldset {
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--primary-color);
+  padding: 0 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid var(--secondary-color);
+}
+
+.btn-submit {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: var(--primary-color);
+  outline: none;
+}
+
+/* Elementos Multimedia */
+video,
+audio {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.video-container {
+  margin-top: 1.5rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* Media Query Responsiva (Escritorio / Pantallas grandes) */
+@media (min-width: 48em) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info-grid,
+  .product-categories {
+    flex-direction: row;
+  }
+
+  .info-card,
+  .category-card {
+    flex: 1;
+  }
+
+  .btn-submit {
+    width: auto;
+  }
+}
+
+/* JS Interactive Feature Styles */
+.btn-favorite {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-favorite.active,
+.btn-favorite:hover {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+}
+
+.favorites-widget {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.favorites-widget ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* JS Form Validation Styles */
+.input-error {
+  border-color: #d9534f !important;
+  background-color: #fff6f6;
+}
+
+.error-text {
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  font-weight: bold;
+}
